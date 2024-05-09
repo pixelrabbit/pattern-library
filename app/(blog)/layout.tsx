@@ -108,9 +108,9 @@ export default function RootLayout({
         <section className="min-h-screen">
           {draftMode().isEnabled && <AlertBanner />}
           <main>{children}</main>
-          <Suspense>
+          {/* <Suspense>
             <Footer />
-          </Suspense>
+          </Suspense> */}
         </section>
         {draftMode().isEnabled && <VisualEditing />}
         <SpeedInsights />
